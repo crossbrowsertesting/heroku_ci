@@ -1,0 +1,1 @@
+Clone, create a new repository, and connect it to heroku to demonstrate Heroku CI capability
