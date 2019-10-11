@@ -37,6 +37,8 @@ async function fullExample(){
                 .withCapabilities(caps)
                 .build();
 
+    
+    console.lop('Heroku Test Run Branch ' + process.env.HEROKU_TEST_RUN_BRANCH)
 
     console.log('Waiting on the browser to be launched and the session to start');
 
