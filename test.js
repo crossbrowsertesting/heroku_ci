@@ -40,7 +40,9 @@ async function fullExample(){
     
     console.log('Heroku Test Run Branch ' + process.env.HEROKU_TEST_RUN_BRANCH)
 
-    console.log('Heroku App Name' + heroku_app_name);
+    console.log('Heroku App Name ' + heroku_app_name);
+
+    console.log('Heroku link ' + herokuapp)
 
     console.log('Waiting on the browser to be launched and the session to start');
 
