@@ -43,7 +43,6 @@ async function fullExample(){
     console.log('Heroku link ' + herokuapp)
 
     console.log('Waiting on the browser to be launched and the session to start');
-    
     /*
     await driver.getSession().then(function(session){
         sessionId = session.id_; //need for API calls
