@@ -6,6 +6,10 @@
   "keywords": ["node", "express", "heroku"],
   "image": "heroku/nodejs",
 
+  "scripts":{
+    "postdeploy":"bin/bootstrap"
+  },
+
   "env": {
     "HEROKU_APP_NAME": {
       "required": true
