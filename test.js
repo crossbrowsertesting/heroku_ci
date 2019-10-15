@@ -8,7 +8,6 @@ var username = process.env.CBT_USER; //heroku ci config var with cbt username
 var authkey = process.env.CBT_AUTH_KEY; //heroku ci config var with cbt authkey  
 var herokuapp = process.env.APPLINK; //heroku ci config var with link to app
 var heroku_app_name = process.env.HEROKU_APP_NAME;
-console.log(heroku_app_name);
 
 var webdriver = require('selenium-webdriver');
 var SeleniumServer = require('selenium-webdriver/remote').SeleniumServer;
@@ -40,7 +39,9 @@ async function fullExample(){
                 .build();
 
     
-    console.lop('Heroku Test Run Branch ' + process.env.HEROKU_TEST_RUN_BRANCH)
+    console.log('Heroku Test Run Branch ' + process.env.HEROKU_TEST_RUN_BRANCH)
+
+    console.log('Heroku App Name' + heroku_app_name);
 
     console.log('Waiting on the browser to be launched and the session to start');
 
