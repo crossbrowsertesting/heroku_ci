@@ -4,14 +4,5 @@
   "repository": "https://github.com/heroku/node-js-getting-started",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
   "keywords": ["node", "express", "heroku"],
-  "image": "heroku/nodejs",
-  "env": {
-    "HEROKU_APP_NAME": {
-      "required": true
-    },
-    "HEROKU_PARENT_APP_NAME": {
-      "required": true
-    },
-    "DONT_INHERIT_THIS_CONFIG_VAR": "HEROKU_APP_NAME"
-  }
+  "image": "heroku/nodejs"
 }
