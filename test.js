@@ -29,7 +29,6 @@ var caps = {
 
 var sessionId = null;
 
-
 console.log('Connection to the CrossBrowserTesting remote server');
 async function fullExample(){
     try{
