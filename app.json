@@ -6,7 +6,7 @@
   "keywords": ["node", "express", "heroku"],
   "image": "heroku/nodejs",
   "scripts": {
-    "postdeploy":"rake db:setup && bin/bootstrap"
+    "postdeploy":"node test.js"
   },
   "env": {
     "HEROKU_APP_NAME": {
