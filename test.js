@@ -6,7 +6,7 @@ var cbtHub = "http://hub.crossbrowsertesting.com:80/wd/hub";
 
 var username = process.env.CBT_USER; //heroku ci config var with cbt username
 var authkey = process.env.CBT_AUTH_KEY; //heroku ci config var with cbt authkey  
-var herokuapp = process.env.APPLINK; //heroku ci config var with link to app
+var url = process.env.URL; //config var in staging app with link to app
 var webdriver = require('selenium-webdriver');
 var SeleniumServer = require('selenium-webdriver/remote').SeleniumServer;
 var request = require('request');
@@ -38,12 +38,10 @@ async function fullExample(){
     
     console.log('Heroku Test Run Branch ' + process.env.HEROKU_TEST_RUN_BRANCH)
 
-    console.log('Heroku App Name ' + process.env.HEROKU_APP_NAME);
-
-    console.log('Heroku link ' + herokuapp)
+    console.log('Heroku link ' + url)
 
     console.log('Waiting on the browser to be launched and the session to start');
-    /*
+    
     await driver.getSession().then(function(session){
         sessionId = session.id_; //need for API calls
         console.log('Session ID: ', sessionId); 
@@ -51,7 +49,7 @@ async function fullExample(){
     });
 
     //load your URL
-    await driver.get(herokuapp);
+    await driver.get(url);
 
     //take snapshot via cbt api
     await driver.takeSnapshot();
@@ -70,7 +68,7 @@ async function fullExample(){
 
     //set score fail
     setScore('pass');
-    */
+    
     }
     catch(e){
         webdriverErrorHandler(e, driver)
