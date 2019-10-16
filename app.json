@@ -4,10 +4,5 @@
   "repository": "https://github.com/heroku/node-js-getting-started",
   "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
   "keywords": ["node", "express", "heroku"],
-  "image": "heroku/nodejs",
-  "env":{
-    "HEROKU_API_TOKEN":{
-      "required":true
-    }
-  }
+  "image": "heroku/nodejs"
 }
