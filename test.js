@@ -6,7 +6,7 @@ var cbtHub = "http://hub.crossbrowsertesting.com:80/wd/hub";
 
 var username = process.env.CBT_USER; //heroku ci config var with cbt username
 var authkey = process.env.CBT_AUTH_KEY; //heroku ci config var with cbt authkey  
-var url = process.env.URL; //config var in staging app with link to app
+var url = process.env.HEROKU_UAT_APP_WEB_URL; //config var in staging app with link to app
 var webdriver = require('selenium-webdriver');
 var SeleniumServer = require('selenium-webdriver/remote').SeleniumServer;
 var request = require('request');
