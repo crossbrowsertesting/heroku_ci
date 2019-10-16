@@ -1,4 +1,4 @@
-CBT Help Link: https://help.crossbrowsertesting.com/selenium-testing/%selenium-categories%/heroku-ci/
+CBT Help Link: https://help.crossbrowsertesting.com/selenium-testing/getting-started/heroku-ci/
 
 Clone, create a new repository, and connect it to heroku to demonstrate Heroku CI capability.
 
