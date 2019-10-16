@@ -1,10 +1,5 @@
-Clone, create a new repository, and connect it to heroku to demonstrate Heroku CI capability
+CBT Help Link: 
 
-"env": {
-    "HEROKU_APP_NAME": {
-      "required": true
-    },
-    "HEROKU_PARENT_APP_NAME": {
-      "required": true
-    }
-  }
+Clone, create a new repository, and connect it to heroku to demonstrate Heroku CI capability.
+
+Enable review apps, create a new branch, and make a pull request to run CBT tests on the review app in Heroku CI.
