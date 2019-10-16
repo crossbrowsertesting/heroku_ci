@@ -9,6 +9,12 @@
   "env":{
     "URL":{
       "required":true
+    },
+    "CBT_USER":{
+      "required":true
+    },
+    "CBT_AUTH_KEY":{
+      "required":true
     }
   }
 }
